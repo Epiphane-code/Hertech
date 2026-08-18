@@ -1220,7 +1220,11 @@
 
         <!-- Suivi Content -->
 
-        <div class="hidden group-has-[input#suivi:checked]:block mt-12 text-lg flex-1 h-full ">
+        <div class="hidden group group-has-[input#suivi:checked]:block mt-12 text-lg flex-1 h-full ">
+            <input title="title" class="peer hidden" type="radio" id="configuretag" name="suivi">
+            <input title="title" class="peer hidden" type="radio" id="updatetag" name="suivi">
+            <input title="title" class="peer hidden" type="radio" id="deletetag" name="suivi">
+            <input title="title" class="peer hidden" type="radio" id="offtag" name="suivi">
             <div class="flex items-center gap-2 mb-4">
                 <div class="p-2 bg-white rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
                         viewBox="0 0 752.2 590.4">
@@ -1255,8 +1259,8 @@
                                                 class="fa-solid fa-cloud-arrow-up"></i></span>
                                     </div>
                                     <div class="flex flex-1">
-                                        <span class="bg-green-500 px-4 py-1 rounded-sm text-white"><i
-                                                class="fa-solid fa-add"></i> Configurer un nouvel RFID</span>
+                                        <label for="configuretag" class="bg-green-500 px-4 py-1 rounded-sm text-white"><i
+                                                class="fa-solid fa-add"></i> Configurer un nouvel RFID</label>
                                     </div>
                                 </div>
                             </div>
@@ -1276,81 +1280,145 @@
                     <tr class="hover:bg-[#CCCCCC]">
                         <td class="px-4"><input title = "title" type="checkbox"></td>
                         <td>
-                            <div class="flex flex-col">
+                            <label for="updatetag" class="block flex flex-col">
                                 <div><i class="fa-solid fa-tag"></i> Tag</div>
                                 <div class="text-[10px]">yfyjSEU75GeP0N,hfds</div>
-                            </div>
+                            </label>
                         </td>
-                        <td>Malam</td>
+                        <td><label for="updatetag">Malam</label></td>
                         <td>
                             <div class="bg-green-500 w-5 h-6 text-center text-white">5</div>
                         </td>
-                        <td class=""><span class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</span>
+                        <td class=""><label for="deletetag" class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</label>
+                        </td>
+                    </tr>
+                     <tr class="hover:bg-[#CCCCCC]">
+                        <td class="px-4"><input title = "title" type="checkbox"></td>
+                        <td>
+                            <label for="updatetag" class="block flex flex-col">
+                                <div><i class="fa-solid fa-tag"></i> Tag</div>
+                                <div class="text-[10px]">yfyjSEU75GeP0N,hfds</div>
+                            </label>
+                        </td>
+                        <td><label for="updatetag">Malam</label></td>
+                        <td>
+                            <div class="bg-green-500 w-5 h-6 text-center text-white">5</div>
+                        </td>
+                        <td class=""><label for="deletetag" class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</label>
+                        </td>
+                    </tr>
+                     <tr class="hover:bg-[#CCCCCC]">
+                        <td class="px-4"><input title = "title" type="checkbox"></td>
+                        <td>
+                            <label for="updatetag" class="block flex flex-col">
+                                <div><i class="fa-solid fa-tag"></i> Tag</div>
+                                <div class="text-[10px]">yfyjSEU75GeP0N,hfds</div>
+                            </label>
+                        </td>
+                        <td><label for="updatetag">Malam</label></td>
+                        <td>
+                            <div class="bg-green-500 w-5 h-6 text-center text-white">5</div>
+                        </td>
+                        <td class=""><label for="deletetag" class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</label>
                         </td>
                     </tr>
                     <tr class="hover:bg-[#CCCCCC]">
                         <td class="px-4"><input title = "title" type="checkbox"></td>
                         <td>
-                            <div class="flex flex-col">
+                            <label for="updatetag" class="block flex flex-col">
                                 <div><i class="fa-solid fa-tag"></i> Tag</div>
                                 <div class="text-[10px]">yfyjSEU75GeP0N,hfds</div>
-                            </div>
+                            </label>
                         </td>
-                        <td>Malam</td>
+                        <td><label for="updatetag">Malam</label></td>
                         <td>
                             <div class="bg-green-500 w-5 h-6 text-center text-white">5</div>
                         </td>
-                        <td class=""><span class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</span>
+                        <td class=""><label for="deletetag" class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</label>
                         </td>
                     </tr>
                     <tr class="hover:bg-[#CCCCCC]">
                         <td class="px-4"><input title = "title" type="checkbox"></td>
                         <td>
-                            <div class="flex flex-col">
+                            <label for="updatetag" class="block flex flex-col">
                                 <div><i class="fa-solid fa-tag"></i> Tag</div>
                                 <div class="text-[10px]">yfyjSEU75GeP0N,hfds</div>
-                            </div>
+                            </label>
                         </td>
-                        <td>Malam</td>
+                        <td><label for="updatetag">Malam</label></td>
                         <td>
                             <div class="bg-green-500 w-5 h-6 text-center text-white">5</div>
                         </td>
-                        <td class=""><span class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</span>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-[#CCCCCC]">
-                        <td class="px-4"><input title = "title" type="checkbox"></td>
-                        <td>
-                            <div class="flex flex-col">
-                                <div><i class="fa-solid fa-tag"></i> Tag</div>
-                                <div class="text-[10px]">yfyjSEU75GeP0N,hfds</div>
-                            </div>
-                        </td>
-                        <td>Malam</td>
-                        <td>
-                            <div class="bg-green-500 w-5 h-6 text-center text-white">5</div>
-                        </td>
-                        <td class=""><span class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</span>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-[#CCCCCC]">
-                        <td class="px-4"><input title = "title" type="checkbox"></td>
-                        <td>
-                            <div class="flex flex-col">
-                                <div><i class="fa-solid fa-tag"></i> Tag</div>
-                                <div class="text-[10px]">yfyjSEU75GeP0N,hfds</div>
-                            </div>
-                        </td>
-                        <td>Malam</td>
-                        <td>
-                            <div class="bg-green-500 w-5 h-6 text-center text-white">5</div>
-                        </td>
-                        <td class=""><span class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</span>
+                        <td class=""><label for="deletetag" class="bg-red-500 px-4 py-1 rounded-sm text-white">Supprimer ce tag</label>
                         </td>
                     </tr>
 
                 </tbody>
             </table>
+            </div>
+
+             <div
+                class="hidden fixed group-has-[#deletetag:checked]:flex left-0 top-0 w-full h-full bg-black/70 flex justify-center items-center">
+                <div class="min-w-[25%] rounded-xl bg-[#CCCCCC] py-2">
+                    <div class="flex justify-between p-4">
+                        <div class="text-red-500">Supprimer</div>
+                        <div class="text-3xl"><label for="offtag">X</label> </div>
+                    </div>
+                    <div class="flex flex-col bg-[#EFEAEA] py-4 px-2">
+                        <div type="text" class="w-full bg-white rounded-sm h-12 px-2 flex justify-center items-center">
+                            <div>Vous etes sur de supprimer ce tag ?</div>
+                        </div>
+                    </div>
+                   
+                    <div class="w-full py-4 flex justify-end gap-4 py-4 px-2">
+                        <label for="offtag" class="black bg-[#CCCCCC] p-2">Cancel</label><label for="offtag" class="black bg-red-500 p-2 rounded-sm">Delete</label>
+                    </div>
+                </div>
+            </div>
+
+             <div
+                class="hidden fixed group-has-[#updatetag:checked]:flex left-0 top-0 w-full h-full bg-black/70 flex justify-center items-center">
+                <div class="min-w-[25%] rounded-xl bg-[#CCCCCC] py-2">
+                    <div class="flex justify-between p-4">
+                        <div>Edit Animal</div>
+                        <div class="text-3xl"><label for="offtag">X</label> </div>
+                    </div>
+                    <div class="flex flex-col bg-[#EFEAEA] py-4 px-2">
+                        <div>RFID tag</div>
+                        <select title = "title" type="text" class="w-full bg-white rounded-sm h-12 px-2">
+                            <option value="">--RFID---</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col bg-[#EFEAEA] py-4 px-2">
+                        <div>Category</div>
+                        <select title = "title" type="text" class="w-full bg-white rounded-sm h-12 px-2">
+                            <option value="">Bovin</option>
+                            <option value="">Ovin</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col bg-[#EFEAEA] py-4 px-2">
+                        <div>Sex</div>
+                        <select title = "title" type="text" class="w-full bg-white rounded-sm h-12 px-2">
+                            <option value="">mal</option>
+                            <option value="">femelle</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col bg-[#EFEAEA] py-4 px-2">
+                        <div>Birth Date</div>
+                        <div><input title = "title" type="date" class="w-full bg-white rounded-sm h-12 px-2"></div>
+                    </div>
+                    <div class="flex flex-col bg-[#EFEAEA] py-4 px-2">
+                        <div>Status</div>
+                        <select title = "title" class="w-full bg-white rounded-sm h-12 px-2">
+                            <option value="">Sain</option>
+                            <option value="">Malade</option>
+                            <option value="">RAS</option>
+                        </select>
+                    </div>
+                    <div class="w-full py-4 flex justify-end gap-4 py-4 px-2">
+                        <label for="offtag" class="black bg-[#CCCCCC] p-2">Annuler</label><label for="offtag" class="black bg-green-500 p-2 rounded-sm">Sauvegarder le changement</label>
+                    </div>
+                </div>
             </div>
             
         </div>
