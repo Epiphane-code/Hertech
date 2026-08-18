@@ -10,6 +10,7 @@
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -323,6 +324,9 @@
   .min-w-\[25\%\] {
     min-width: 25%;
   }
+  .min-w-\[50\%\] {
+    min-width: 50%;
+  }
   .min-w-\[50px\] {
     min-width: 50px;
   }
@@ -352,9 +356,6 @@
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -606,19 +607,10 @@
   .group-has-\[\#delete\:checked\]\:flex:is(:where(.group):has(:is(#delete:checked)) *) {
     display: flex;
   }
-  .group-has-\[\#deletet\:checked\]\:flex:is(:where(.group):has(:is(#deletet:checked)) *) {
-    display: flex;
-  }
-  .group-has-\[\#deleteta\:checked\]\:flex:is(:where(.group):has(:is(#deleteta:checked)) *) {
-    display: flex;
-  }
   .group-has-\[\#deletetag\:checked\]\:flex:is(:where(.group):has(:is(#deletetag:checked)) *) {
     display: flex;
   }
   .group-has-\[\#update\:checked\]\:flex:is(:where(.group):has(:is(#update:checked)) *) {
-    display: flex;
-  }
-  .group-has-\[\#updateta\:checked\]\:flex:is(:where(.group):has(:is(#updateta:checked)) *) {
     display: flex;
   }
   .group-has-\[\#updatetag\:checked\]\:flex:is(:where(.group):has(:is(#updatetag:checked)) *) {
@@ -675,9 +667,6 @@
     .sm\:block {
       display: block;
     }
-    .sm\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
     .sm\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -688,34 +677,6 @@
     }
     .lg\:left-0 {
       left: 0px;
-    }
-    .lg\:container {
-      width: 100%;
-    }
-    @media (width >= 40rem) {
-      .lg\:container {
-        max-width: 40rem;
-      }
-    }
-    @media (width >= 48rem) {
-      .lg\:container {
-        max-width: 48rem;
-      }
-    }
-    @media (width >= 64rem) {
-      .lg\:container {
-        max-width: 64rem;
-      }
-    }
-    @media (width >= 80rem) {
-      .lg\:container {
-        max-width: 80rem;
-      }
-    }
-    @media (width >= 96rem) {
-      .lg\:container {
-        max-width: 96rem;
-      }
     }
     .lg\:m-4 {
       margin: calc(var(--spacing) * 4);
@@ -747,9 +708,6 @@
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    .lg\:grid-cols-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
     .lg\:flex-col {
       flex-direction: column;
     }
@@ -761,36 +719,6 @@
     }
     .lg\:pl-0 {
       padding-left: 0px;
-    }
-  }
-  @media (width >= 80rem) {
-    .xl\:container {
-      width: 100%;
-    }
-    @media (width >= 40rem) {
-      .xl\:container {
-        max-width: 40rem;
-      }
-    }
-    @media (width >= 48rem) {
-      .xl\:container {
-        max-width: 48rem;
-      }
-    }
-    @media (width >= 64rem) {
-      .xl\:container {
-        max-width: 64rem;
-      }
-    }
-    @media (width >= 80rem) {
-      .xl\:container {
-        max-width: 80rem;
-      }
-    }
-    @media (width >= 96rem) {
-      .xl\:container {
-        max-width: 96rem;
-      }
     }
   }
 }
