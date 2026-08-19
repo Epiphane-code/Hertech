@@ -1469,13 +1469,21 @@
         <!-- Taches Content -->
 
         <div class="hidden group-has-[input#taches:checked]:block mt-12 flex-1 h-full ">
+            <input name="tache" class="peer" id="addtache" type="radio">
+            <input name="tache" class="peer" id="updatetache" type="radio">
+            <input name="tache" class="peer" id="deletetache" type="radio">
+            <input name="tache" class="peer" id="offtache" type="radio">
             <div class="flex flex-row items-center gap-2 mb-4"><i
                     class="fa-regular fa-calendar text-[30px] text-green-500 bg-white shadow rounded-sm p-1"></i>
                 <div>Gestion des taches</div>
             </div>
+            <div class="flex justify-between my-4 items-center">
+                <div>Utilisateur connecte : Malam</div>
+                <div><label for="addtache" class="black px-4 py-2 bg-green-500 text-2xl rounded-sm text-white"><span class="text-3xl text-bolder">+  </span>Ajouter Une Tache</label></div>
+            </div>
 
             <div class="flex flex-col lg:flex-row gap-2">
-                <div class="flex flex-col items-center w-full bg-white shadow">
+                <div class="flex flex-col items-center w-full bg-white shadow rounded-lg">
                     <div class="w-full flex flex-row justify-between p-4 items-center">
                         <div class="">Nombre de taches a faire: 7</div>
                         <div><i class="fa-solid fa-clipboard-check text-2xl"></i></div>
@@ -1503,28 +1511,8 @@
                                             <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
                                             <div class="flex-1">Titre de la tache</div>
                                             <div class="w-[20%] flex gap-1">
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-pencil"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-check"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-pencil"></i></div>
+                                                <label for="updatetache" class="bg-green-500 rounded-sm px-1"><i
+                                                        class="fa-solid text-lg fa-pencil"></i></label>
                                                 <div class="bg-green-500 rounded-sm px-1"><i
                                                         class="fa-solid text-lg fa-trash-can"></i></div>
                                                 <div class="bg-green-500 rounded-sm px-1"><i
@@ -1536,113 +1524,11 @@
 
                                 </td>
                             </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-pencil"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-check"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-pencil"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-check"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-pencil"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-check"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-pencil"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-check"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-pencil"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                                <div class="bg-green-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-check"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-
-
-
+                           
                         </tbody>
                     </table>
                 </div>
-                <div class="flex flex-col items-center w-full bg-white shadow">
+                <div class="flex flex-col items-center w-full bg-white shadow rounded-lg">
                     <div class="w-full flex flex-row justify-between p-4 items-center">
                         <div class="">Nombre de taches deja accomplies : 4</div>
                         <div><i class="fa-solid fa-clipboard-check text-2xl"></i></div>
@@ -1670,8 +1556,8 @@
                                             <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
                                             <div class="flex-1">Titre de la tache</div>
                                             <div class="w-[20%] flex gap-1">
-                                                <div class="bg-red-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
+                                                <label for="deletetache" class="bg-red-500 rounded-sm px-1"><i
+                                                        class="fa-solid text-lg fa-trash-can"></i></label>
                                             </div>
                                         </div>
 
@@ -1679,57 +1565,80 @@
 
                                 </td>
                             </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-red-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-red-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td colspan="3">
-                                    <div class="w-full px-[20px] py-[10px]">
-                                        <div class="flex justify-start">
-                                            <div class="w-[50px]"><input title="title" class="" type="checkbox"></div>
-                                            <div class="flex-1">Titre de la tache</div>
-                                            <div class="w-[20%] flex gap-1">
-                                                <div class="bg-red-500 rounded-sm px-1"><i
-                                                        class="fa-solid text-lg fa-trash-can"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                            </tr>
-
+                           
+                            
+                            
+                            
                         </tbody>
                     </table>
+                </div>
+            </div>
+
+             <div
+
+                class="hidden fixed group-has-[#updatetache:checked]:flex left-0 top-0 w-full h-full bg-black/70 flex justify-center items-center">
+                <div class="min-w-[25%] rounded-xl bg-[#CCCCCC] py-2">
+                    <div class="flex justify-between p-4">
+                        <div class="text-red-500">Supprimer</div>
+
+                        <div class="text-3xl"><label for="offtag">X</label> </div>
+                    </div>
+                    <div class="flex flex-col bg-white py-4 px-4">
+                        <div type="text" class="w-full border border-gray-500 rounded-sm h-12 px-4 flex justify-center items-center">
+                            <input class="w-full h-full border-none outline-none" type="text" value="" placeholder="Vous etes sur de supprimer ce tag ?">
+                        </div>
+                    </div>
+
+                    <div class="w-full py-4 flex justify-end gap-4 py-4 px-4">
+
+                        <label for="offtag" class="black bg-[#CCCCCC] p-2">Cancel</label><label for="offtag"
+                            class="black bg-red-500 p-2 rounded-sm">Delete</label>
+                    </div>
+                </div>
+            </div>
+
+             <div
+
+                class="hidden fixed group-has-[#addtache:checked]:flex left-0 top-0 w-full h-full bg-black/70 flex justify-center items-center">
+                <div class="min-w-[25%] rounded-xl bg-[#CCCCCC] py-2">
+                    <div class="flex justify-between p-4">
+                        <div class="text-red-500">Supprimer</div>
+
+                        <div class="text-3xl"><label for="offtag">X</label> </div>
+                    </div>
+                    <div class="flex flex-col bg-white py-4 px-4">
+                        <div type="text" class="w-full border border-gray-500 rounded-sm h-12 px-4 flex justify-center items-center">
+                            <input class="w-full h-full border-none outline-none" type="text" value="" placeholder="Vous etes sur de supprimer ce tag ?">
+                        </div>
+                    </div>
+
+                    <div class="w-full py-4 flex justify-end gap-4 py-4 px-4">
+
+                        <label for="offtag" class="black bg-[#CCCCCC] p-2">Cancel</label><label for="offtag"
+                            class="black bg-red-500 p-2 rounded-sm">Delete</label>
+                    </div>
+                </div>
+            </div>
+             <div
+
+                class="hidden fixed group-has-[#deletetache:checked]:flex left-0 top-0 w-full h-full bg-black/70 flex justify-center items-start">
+                <div class="min-w-[25%] mt-10 rounded-xl bg-[#CCCCCC] py-2">
+                    <div class="flex justify-between p-4">
+                        <div class="text-red-500">Supprimer</div>
+
+                        <div class="text-3xl"><label for="offtag">X</label> </div>
+                    </div>
+                    <div class="flex flex-col bg-white py-4 px-4">
+                        <div type="text" class="w-full border border-gray-500 rounded-sm h-12 px-4 flex justify-center items-center">
+                            <input class="w-full h-full border-none outline-none" type="text" value="" placeholder="Vous etes sur de supprimer ce tag ?">
+                        </div>
+                    </div>
+
+                    <div class="w-full py-4 flex justify-end gap-4 py-4 px-4">
+
+                        <label for="offtag" class="black bg-[#CCCCCC] p-2">Cancel</label><label for="offtag"
+                            class="black bg-red-500 p-2 rounded-sm">Delete</label>
+                    </div>
                 </div>
             </div>
 

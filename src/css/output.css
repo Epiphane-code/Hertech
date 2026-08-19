@@ -243,8 +243,17 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -665,6 +674,9 @@
     --tw-outline-style: none;
     outline-style: none;
   }
+  .group-has-\[\#addtache\:checked\]\:flex:is(:where(.group):has(:is(#addtache:checked)) *) {
+    display: flex;
+  }
   .group-has-\[\#addtag\:checked\]\:flex:is(:where(.group):has(:is(#addtag:checked)) *) {
     display: flex;
   }
@@ -674,10 +686,16 @@
   .group-has-\[\#delete\:checked\]\:flex:is(:where(.group):has(:is(#delete:checked)) *) {
     display: flex;
   }
+  .group-has-\[\#deletetache\:checked\]\:flex:is(:where(.group):has(:is(#deletetache:checked)) *) {
+    display: flex;
+  }
   .group-has-\[\#deletetag\:checked\]\:flex:is(:where(.group):has(:is(#deletetag:checked)) *) {
     display: flex;
   }
   .group-has-\[\#update\:checked\]\:flex:is(:where(.group):has(:is(#update:checked)) *) {
+    display: flex;
+  }
+  .group-has-\[\#updatetache\:checked\]\:flex:is(:where(.group):has(:is(#updatetache:checked)) *) {
     display: flex;
   }
   .group-has-\[\#updatetag\:checked\]\:flex:is(:where(.group):has(:is(#updatetag:checked)) *) {
